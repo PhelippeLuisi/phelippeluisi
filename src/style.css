@@ -142,9 +142,9 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #007BFF;
+  background-color: #FFE078;
   border-radius: 20px;
-  border: 3px solid #007BFF;
+  border: 3px solid #FFE078;
 }
 
 /* Estilos globais */
@@ -155,9 +155,9 @@ html, body {
 /* Tipografia */
 h2 {
   font-size: 36px;
-  color: #007BFF;
+  color: #FFE078;
   font-weight: bold;
-  font-family: "Space Mono", monospace;
+  font-family: "Open sans",sans-serif;
 }
 
 p,
@@ -166,6 +166,20 @@ a {
   font-size: 18px;
   text-decoration: none;
   font-weight: 400;
+}
+
+.navbar-toggler{
+  border: 1px solid #FFE078;
+  color: white;
+  padding: 10px 20px;
+}
+
+.close-icon{
+  color: red;
+}
+
+.navbar-toggler-icon{
+  display: inline;
 }
 
 /* Classes de utilitários */
@@ -178,7 +192,7 @@ a {
 }
 
 .fonte-blue {
-  color: #007BFF;
+  color: #FFE078;
 }
 
 /* Media Query */
@@ -226,11 +240,11 @@ nav h2{
 }
 
 nav h2 i{
-  color: #007BFF;
+  color: #FFE078;
 }
 
 nav h2 span{
-  color: #007BFF;
+  color: #FFE078;
 }
 
 .nav-item a{
@@ -241,50 +255,136 @@ nav h2 span{
 }
 
 .nav-item a:hover{
-  color: lime;
+  color: #FFE078;
 }
 
 .nav-item .active{
-  color: lime;
+  color: #FFE078;
   font-weight: bold;
 }
 
 /*------------ FULL BANNER INICIO -----------*/
 
-.bg-incio {
+.bg-inicio {
   padding: 160px 0px 80px 0px;
 }
 
-.bg-incio h1{
+.bg-inicio .first{
   margin-top: 180px;
-  font-size: 32px;
-  font-family: "Space Mono", monospace;
 }
 
-.bg-incio h2{
+.hello-container {
+  display: flex;
+  align-items: center; 
+}
+
+.hello-line {
+  width: 30px; 
+  height: 2px; 
+  background-color: #FFE078;
+  margin-right: 10px; 
+}
+
+.hello-text {
+  font-family: 'Arial', sans-serif; 
+  font-size: 1.2rem; 
+  font-weight: bold; 
+  color: #FFE078;
+  text-transform: uppercase; 
+}
+
+.bg-inicio h1{
+  font-size: 32px;
+  font-family: "Ruda",sans-serif;
+  margin: 10px 0 20px;
+  font-weight: bold;
+}
+
+.bg-inicio h2{
   font-weight: bold;
   font-size: 20px;
+  color: #FFE078;
   font-family: "Press Start 2P", system-ui;
 }
 
-.bg-incio img{
+.bg-inicio img{
   height: 600px;
   object-fit: cover;
   width: 100%;
   border-radius: 100%;
 }
 
+.ctas-topo{
+  display: flex;
+  margin-top: 25px;
+}
+
+.cta-topo{
+  background: #FFE078;
+  box-shadow: 0px 0px 5.4px -1px #FFE078;
+  border-radius: 99px;
+  padding: 10px 25px;
+  color: white;
+  font-size: 17px;
+  display: inline-block;
+  width: auto;
+}
+
+.cta-topo:hover{
+  background: transparent;
+  box-shadow: 0px 0px 5.4px -1px #FFE078;
+  color: #FFE078;
+  border: 1px solid #FFE078;;
+  transition: 0.3s all ease;
+}
+
+.cta-topo-2:hover{
+  background: #FFE078;
+  box-shadow: 0px 0px 5.4px -1px #FFE078;
+  color: white;
+  transition: 0.3s all ease;
+}
+
+.cta-topo-2{
+  background: transparent;
+  box-shadow: 0px 0px 5.4px -1px #FFE078;
+  border-radius: 99px;
+  padding: 10px 25px;
+  color: #FFE078;
+  border: 1px solid #FFE078;;
+  font-size: 17px;
+  display: inline-block;
+  width: auto;
+  margin-left: 25px;
+}
+
+.cta-padrao {
+  background: transparent;
+  box-shadow: 0px 0px 5.4px -1px #FFE078;
+  border-radius: 99px;
+  padding: 10px 25px;
+  color: #FFE078;
+  border: 1px solid #FFE078;;
+  font-size: 20px;
+  margin-top: 65px;
+  display: inline-block;
+  width: 550px;
+}
+
+.ctas-topo i, .cta-padrao  i{
+  padding-left: 25px;
+}
+
 /*-------- PARTE 2 ------*/
-.bg-parte-2 {
-  padding: 65px 0px 0px 0px;
+
+.bg-parte-2 .col-lg-6:nth-child(2){
+  padding: 65px 0px;
 }
 
 .bg-parte-2 img{
   margin-left: -40px;
-}
-
-.bg-parte-2 h2{
-  margin-top: 40px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .bg-parte-2 .cta-padrao{
@@ -301,7 +401,7 @@ nav h2 span{
 /*----- PARTE 3 ------*/
 .bg-parte-3 {
   padding: 70px 0px;
-  background-color: #191919;
+  background-color: #161922;
   color: white;
 }
 
@@ -328,7 +428,7 @@ nav h2 span{
 
 .skill-progress {
   height: 100%;
-  background-color: #07B9A9;
+  background-color: #FFE078;
   width: 0;
   transition: width 2s ease-in-out;
 }
@@ -345,12 +445,18 @@ nav h2 span{
   color: #fff;
 }
 
+.counter {
+  font-weight: bold;
+  color: #FFE078;
+  transition: color 0.3s ease-in-out;
+}
+
 /* ---- PARTE 4 -----*/
 .bg-parte-4 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 12.55%, #252525 60%), linear-gradient(0deg, black, black), #FFFFFF;
+  background-color: #141821;
   text-align: center;
   position: relative;
-  padding: 65px 0px;
+  padding: 25px 0px 65px;
 }
 
 .bg-parte-4 .col-lg-4{
@@ -370,22 +476,10 @@ nav h2 span{
   cursor: pointer;
 }
 
-.cta-padrao {
-  background: linear-gradient(90deg, #0063AE 0%, #3CA1BE 100%);
-  box-shadow: 0px 0px 13.4px -1px #0099C5;
-  border-radius: 10px;
-  padding: 10px 80px;
-  color: white;
-  font-size: 20px;
-  margin-top: 65px;
-  display: inline-block;
-  width: 550px;
-}
-
 /*---- PARTE 5 ----*/
 .bg-parte-5 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 12.55%, #0D0D0D 100%), linear-gradient(0deg, #252525, #252525), #FFFFFF;
-  padding: 60px;
+  background: #191D28;
+  padding: 60px 0px;
 }
 
 .bg-parte-5 h2 {
@@ -393,13 +487,13 @@ nav h2 span{
 }
 
 .card-parte-5 {
-  background-color: #333;
+  background-color: #161922;
   padding: 40px 25px;
   height: 95%;
 }
 
 .card-parte-5 h3 {
-  color: #07B9A9;
+  color: #7897ff;
   font-weight: bold;
   font-size: 24px;
   margin: 15px 0px;
@@ -412,69 +506,22 @@ nav h2 span{
 /*------ PARTE 6 -------*/
 .bg-parte-6 {
   padding: 65px 0px;
+  background-color: #141821;
 }
 
-.bg-parte-6 h2{
-  margin-bottom: 60px;
-}
-
-.bg-parte-6 h2 span {
+.bg-parte-6 a{
   color: white;
-  display: block;
 }
 
-.form-container {
-  width: 100%;
-  margin: 0 auto; /* Centraliza o formulário na página */
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  background-color: #333;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #007BFF;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
-  width: 100%;
-  padding: 10px;
-  color: #007BFF;
-  border: 1px solid #ccc;
-  background-color: #333;
-  border-radius: 4px;
-  box-sizing: border-box; /* Garante que o padding não afete a largura total */
-}
-
-.submit-btn {
-  width: 100%;
-  padding: 10px;
-  background: linear-gradient(90deg, #0063AE 0%, #3CA1BE 100%);
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
+.bg-parte-6 a:hover{
+  transition: 0.3s;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.submit-btn:hover {
-  background-color: #0056b3;
+  color: #FFE078;
 }
 
 /*------ FOOTER ------*/
 .bg-footer {
-  background-color: #4b4b4b;
+  background-color: #161922;
   padding: 35px 0px;
   color: white;
 }
@@ -485,9 +532,10 @@ input[type="tel"] {
 }
 
 .bg-footer hr {
-  background: #007BFF;
-  height: 4px;
+  background: #FFE078;
+  height: 2px;
   margin: 15px 0px;
+  opacity: 1;
   font-weight: bold;
 }
 
@@ -500,28 +548,32 @@ input[type="tel"] {
   height: 300px;
 }
 
-.i-wpp {
+.bg-footer i, .icones-fixo-left i{
+  color: white;
+}
+
+.i-wpp:hover {
   color: green;
 }
 
-.i-email {
+.i-email:hover {
   color: #db4a39;
 }
 
-.i-insta {
+.i-insta:hover {
   color: #E1306C;
 }
 
-.i-facebook {
+.i-facebook:hover {
   color: #3b5998;
 }
 
-.i-linkedin {
+.i-linkedin:hover {
   color: #0e76a8;
 }
 
 .i-github {
-  color: #171515;
+  color: white;
 }
 
 /*-------- ANIMAÇÕES --------*/
@@ -587,7 +639,8 @@ input[type="tel"] {
   width: 0%;
   height: 100%;
   cursor: pointer;
-  background: lime;
+  background: #FFE078;
+  border-radius: 999px;
   color: white;
   transition: all 0.5S;
   z-index: -1;
@@ -596,7 +649,7 @@ input[type="tel"] {
 .cta-padrao:hover {
   color: white;
   font-weight: bold;
-  border: 2px solid lime;
+  border: 2px solid #FFE078;
   cursor: pointer;
   z-index: 3;
 }
@@ -653,7 +706,7 @@ input[type="tel"] {
 }
 
 .theme-switch:checked + .switch:before {
-  background-color: #007bff; 
+  background-color: #FFE078; 
 }
 
 .theme-switch:checked + .switch:after {
@@ -696,6 +749,14 @@ input[type="tel"] {
   color: black;
 }
 
+.bg-inicio{
+  background: #161922;
+}
+
+.bg-parte-2{
+  background: #191D28;
+}
+
  .dark-mode nav{
   background-color: #7EBCF2;
 }
@@ -709,7 +770,7 @@ input[type="tel"] {
 }
 
 .dark-mode h2 {
-  color: lime;
+  color: #FFE078;
 }
 
 .dark-mode p {
@@ -740,7 +801,7 @@ input[type="tel"] {
 }
 
 .dark-mode .line2 {
-  color: lime;
+  color: #FFE078;
   font-weight: bold;
   font-family: "Special Elite", monospace;
   font-size: 32pt;
@@ -752,7 +813,7 @@ input[type="tel"] {
 }
 
 .dark-mode .bg-portifolio-img img {
-  border: 1px solid lime;
+  border: 1px solid #FFE078;
   height: auto;
   border-radius: 10px;
   max-width: 100%;
@@ -836,7 +897,7 @@ input[type="tel"] {
 }
 
 .dark-mode .line2 {
-  color: lime;
+  color: #FFE078;
   font-weight: bold;
   font-family: "Special Elite", monospace;
   font-size: 21px;
@@ -854,7 +915,7 @@ input[type="tel"] {
 
 /*-------- PARTE 3 -----*/
 .dark-mode .skill-progress{
-  background: lime;
+  background: #FFE078;
 }
 
 .dark-mode .skill-percentage{
@@ -862,7 +923,7 @@ input[type="tel"] {
 }
 
 .dark-mode .bg-parte-3 h3:first-child{
-  color: lime;
+  color: #FFE078;
 }
 
 .dark-mode .bg-parte-3 h3{
@@ -1005,7 +1066,7 @@ input[type="tel"] {
   left: -50px; /* Começa fora do card */
   transform: translateY(-50%);
   animation: handSwipe 2s ease-in-out infinite;
-      color: #007BFF;
+      color: #FFE078;
       font-weight: bold;
 }
 
@@ -1025,7 +1086,70 @@ input[type="tel"] {
     opacity: 1;
   }
   100% {
-    left: 100%;
+    left: 90%;
     opacity: 0.5;
+  }
+}
+
+
+@media(max-width: 992px){
+  /*------ GLOBAL *-----*/
+  nav h2{
+    font-size: 12px;
+  }
+
+  .cta-padrao{
+    width: 90%;
+  }
+
+  .icones-fixo-left{
+    display: none;
+  }
+
+  /*------ INICIO *-----*/
+  .bg-inicio{
+    padding-bottom: 0;
+  }
+
+  .bg-inicio .first{
+    margin-top: 0;
+  }
+
+  .bg-inicio img{
+    height: 50%;
+    margin-bottom: 25px;
+  }
+
+  /*------ PARTE 2 *-----*/
+  .bg-parte-2{
+    padding: 0px;
+  }
+
+  .bg-parte-2 img{
+    margin-left: 0;
+    height: auto;
+  }
+
+  .bg-parte-2 .col-lg-6:nth-child(2){
+    padding: 35px 20px;
+  }
+}
+
+@media(max-width: 420px){
+  .bg-inicio h2{
+    font-size: 16px;
+  }
+
+  .bg-inicio .h2-dev{
+    font-size: 14px;
+  }
+
+  .ctas-topo{
+    text-align: center;
+  }
+
+  .ctas-topo i, .cta-padrao i{
+    padding-left: 0;
+    text-align: center;
   }
 }
