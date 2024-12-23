@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
    <head>
@@ -9,6 +8,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MFWNFBT');</script>
     <!-- End Google Tag Manager -->
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,32 +28,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Domine:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ruda:wght@400..900&family=Sora:wght@100..800&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <!-- Animações-->
+
+    <!-- Animações
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
-
+    -->
+    
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="./src/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/src/bootstrap.css">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="./src/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="./src/style.css">
+	<link rel="stylesheet" type="text/css" href="/src/style.css">
 	   
    </head>
    <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFWNFBT"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFWNFBT"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
       
-    
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container centraliza">
@@ -64,8 +68,11 @@
                 </h2>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <span class="navbar-toggler-icon">
+                    <i class="fa-solid fa-bars open-icon"></i> <!-- Ícone para abrir -->
+                    <i class="fa-solid fa-x close-icon d-none"></i> <!-- Ícone para fechar -->
+                </span>
+            </button>            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav centraliza">
                     <li class="nav-item">
@@ -92,41 +99,53 @@
                         <a class="nav-link" href="#Contato">Contato</a>
                     </li>
 
-                    <div class="theme-switcher">
+                    <div class="theme-switcher invisible">
                         <input type="checkbox" id="theme-switch" class="theme-switch" />
                         <label for="theme-switch" class="switch">
                             <span class="icon moon"><i class="fas fa-moon"></i></span>
                             <span class="icon sun"><i class="fas fa-sun"></i></span>
                         </label>
                     </div>
-                    
-
-                      <script>
-                        function darkMode() {
-                          var element = document.body;
-                          element.classList.toggle("dark-mode");
-                        }
-                      </script>
+               
                 </ul>
             </div>
         </div>
     </nav>
 
     <main>
-        <section class="container-fluid bg-incio" data-aos="fade-up">
+        <section class="container-fluid bg-inicio" data-aos="fade-up">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-12">
-                        <h1>Olá, Eu sou <br> Phelippe Koichi Luisi</h1>
+                    <div class="col-lg-6 col-12 first">
+                        <img src="/img/foto-topo-dois.jpg" class="img-fluid esconde-desktop" alt="Olá, Eu sou Phelippe Koichi Luisi">
+
+                        <div class="hello-container">
+                            <div class="hello-line"></div>
+                            <span class="hello-text">Olá, eu sou</span>
+                        </div>
+
+                        <h1>Phelippe Koichi Luisi</h1>
                         <div class="typing-container">
-                            <h2 class="typing">Desenvolvedor Front-End</h2>
+                            <h2 class="typing h2-dev">Desenvolvedor Front-End</h2>
                             <h2 class="typing">Freelancer</h2>
                             <h2 class="typing">Estudante</h2>
                         </div>
+
+                        <div class="ctas-topo">
+                            <a href="/img/curriculo-phelippe.pdf" download="Curriculo_Phelippe_Luisi" class="cta-topo">
+                                Download CV
+                                <i class="fas fa-download"></i>
+                            </a>
+    
+                            <a href="https://api.whatsapp.com/send?phone=5548988025053&text=Ol%C3%A1,%20visitei%20o%20seu%20site%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20seus%20servi%C3%A7os.%20Poderia%20me%20ajudar?%20%0A%0A" target="_blank" download="Curriculo_Phelippe_Luisi" class="cta-topo-2">
+                                Contact Me
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
                     </div>                                   
 
-                    <div class="col-lg-6 col-12">
-                        <img src="./img/perfil-black.jpeg" class="img-fluid" alt="Olá, Eu sou Phelippe Koichi Luisi">
+                    <div class="col-lg-6 col-12 esconde-mobile">
+                        <img src="/img/foto-topo-dois.jpg" class="img-fluid" alt="Olá, Eu sou Phelippe Koichi Luisi">
                     </div>
                 </div>
             </div>
@@ -134,10 +153,13 @@
 
         <!--Parte 2-->
         <section class="container-fluid bg-parte-2" id="Sobre" data-aos="fade-left">
+            <div class="col-lg-6 col-12 esconde-desktop no-padding">
+                <img src="/img/sobre-mim.jpg" class="img-fluid" alt="Olá, Eu sou Phelippe Koichi Luisi">
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-12">
-                        <img src="./img/foto-parte-2.jpeg" class="img-fluid" alt="Olá, Eu sou Phelippe Koichi Luisi">
+                    <div class="col-lg-6 col-12 esconde-mobile">
+                        <img src="/img/sobre-mim.jpg" class="img-fluid" alt="Olá, Eu sou Phelippe Koichi Luisi">
                     </div>
 
                     <div class="col-lg-6 col-12">
@@ -151,7 +173,7 @@
 
                         <p>Adoro o que faço e estou sempre disposto a aprender e crescer profissionalmente. Sou um profissional claro e responsável, que trabalha com dedicação e comprometimento. Estou animado para continuar crescendo na área de desenvolvimento de sites e contribuir com meu conhecimento e habilidades. Estou procurando oportunidades para aplicar minhas habilidades e crescer em um ambiente dinâmico e desafiador.</p>
 
-                        <a href="./img/curriculo-phelippe.pdf" download="Curriculo_Phelippe_Luisi" class="cta-padrao">
+                        <a href="/img/curriculo-phelippe.pdf" download="Curriculo_Phelippe_Luisi" class="cta-padrao">
                             Download CV
                             <i class="fas fa-download"></i>
                         </a>
@@ -171,66 +193,75 @@
 
                     <div class="col-lg-6 col-12" >
                         <div class="skill">
-                        <span class="skill-label">HTML</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="100%"></div>
+                            <span class="skill-label">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="100%"></div>
+                            </div>
+                            <span class="skill-percentage">100%</span>
                         </div>
-                        <span class="skill-percentage">80%</span>
-                        </div>
+
                         <div class="skill">
-                        <span class="skill-label">CSS</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="80%"></div>
+                            <span class="skill-label">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60%"></div>
+                            </div>
+                            <span class="skill-percentage">60%</span>
                         </div>
-                        <span class="skill-percentage">80%</span>
-                        </div>
+
                         <div class="skill">
-                        <span class="skill-label">Wordpress</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="90%"></div>
-                        </div>
-                        <span class="skill-percentage">90%</span>
+                            <span class="skill-label">Wordpress</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90%"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-12">
                         <div class="skill">
-                        <span class="skill-label">PHP</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="60%"></div>
+                            <span class="skill-label">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="30%"></div>
+                            </div>
+                            <span class="skill-percentage">30%</span>
                         </div>
-                        <span class="skill-percentage">60%</span>
-                        </div>
+
                         <div class="skill">
-                        <span class="skill-label">Laravel</span>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="60%"></div>
+                            <span class="skill-label">PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60%"></div>
+                            </div>
+                            <span class="skill-percentage">60%</span>
                         </div>
-                        <span class="skill-percentage">60%</span>
+
+                        <div class="skill">
+                            <span class="skill-label">Laravel</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60%"></div>
+                            </div>
+                            <span class="skill-percentage">60%</span>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-12">
+                    <div class="col-lg-3 col-6">
                         <h3 class="mb-0 counter" data-count="20">+0</h3>
                         <p>sites feitos</p>
                     </div>
                     
-                    <div class="col-lg-3 col-12">
+                    <div class="col-lg-3 col-6">
                         <h3 class="mb-0 counter" data-count="15">+0</h3>
                         <p>Certificados</p>
                     </div>
                     
-                    <div class="col-lg-3 col-12">
+                    <div class="col-lg-3 col-6">
                         <h3 class="mb-0 counter" data-count="30">+0</h3>
                         <p>projetos feitos</p>
                     </div>
                     
-                    <div class="col-lg-3 col-12">
+                    <div class="col-lg-3 col-6">
                         <h3 class="mb-0 counter" data-count="2">+0</h3>
                         <p>anos de experiência</p>
                     </div>
-                    
-                    
                 </div>
             </div>
             <div id="Cases"></div>
@@ -245,21 +276,21 @@
                     </div>
 
                     <div class="col-lg-4 col-12">
-                        <a href="https://catarata.clinicabonfante.com.br/" target="_blank"><img src="./img/catarata-mtg-rmv-bg.png" class="img-fluid" alt="Site feito para o Cliente"></a>
+                        <a href="https://cinoft.com.br/" target="_blank"><img src="/img/site-cinoft.png" class="img-fluid" alt="Site feito para o Cliente"></a>
                         <div class="hand-container">
                             <i class="fa-regular fa-hand"></i>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-12">
-                        <a href="https://corear.com.br/" target="_blank"><img src="./img/site-cor-e-ar-rmv-bg.png" class="img-fluid" alt="Site feito para o Cliente..."></a>
+                        <a href="https://corear.com.br/" target="_blank"><img src="/img/site-cor-e-ar-rmv-bg.png" class="img-fluid" alt="Site feito para o Cliente..."></a>
                         <div class="hand-container">
                             <i class="fa-regular fa-hand"></i>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-12">
-                        <a href="http://clinicabonfante.com.br/" target="_blank"><img src="./img/site-dr-delso-mtg-rmv-bg.png" class="img-fluid" alt="Site feito para o Cliente..."></a>
+                        <a href="http://clinicabonfante.com.br/" target="_blank"><img src="/img/site-dr-delso-mtg-rmv-bg.png" class="img-fluid" alt="Site feito para o Cliente..."></a>
                         <div class="hand-container">
                             <i class="fa-regular fa-hand"></i>
                         </div>
@@ -269,21 +300,21 @@
 
                     <!--Coluna 2-->
                     <div class=" col-lg-4 col-12 mt-5">
-                        <a href="https://coluna.drdiegozanin.com.br/"><img src="./img/site-dr-diego-rmv-bg.png" class="img-fluid" alt="Site feito para o Cliente..."></a>
+                        <a href="https://coluna.drdiegozanin.com.br/"><img src="/img/site-dr-diego-rmv-bg.png" class="img-fluid" alt="Site feito para o Cliente..."></a>
                         <div class="hand-container">
                             <i class="fa-regular fa-hand"></i>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-12 mt-5">
-                        <a href="http://lp.dramarcellahachul.com.br/" target="_blank"><img src="./img/site-dra-marcella-.png" class="img-fluid" alt="Site feito para o Cliente..."></a>
+                        <a href="http://lp.dramarcellahachul.com.br/" target="_blank"><img src="/img/site-dra-marcella-.png" class="img-fluid" alt="Site feito para o Cliente..."></a>
                         <div class="hand-container">
                             <i class="fa-regular fa-hand"></i>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-12 mt-5">
-                        <a href="http://lp.felipebenvenuti.com.br/"><img src="./img/site-felipe-mtg-rmv-bg.png" class="img-fluid" alt="Site feito para o Cliente..."></a>
+                        <a href="http://lp.felipebenvenuti.com.br/"><img src="/img/site-felipe-mtg-rmv-bg.png" class="img-fluid" alt="Site feito para o Cliente..."></a>
                         <div class="hand-container">
                             <i class="fa-regular fa-hand"></i>
                         </div>
@@ -293,21 +324,21 @@
 
                     <!--Coluna 3-->
                     <div class="col-lg-4 col-12">
-                        <a href="http://mobilease.com.br/" target="_blank"><img src="./img/site-mobilease-remove-bg.png" class="img-fluid" alt="Site feito para o Cliente..."></a>
+                        <a href="http://mobilease.com.br/" target="_blank"><img src="/img/site-mobilease-remove-bg.png" class="img-fluid" alt="Site feito para o Cliente..."></a>
                         <div class="hand-container">
                             <i class="fa-regular fa-hand"></i>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-12">
-                        <a href="https://cirurgiarefrativa.drmatheusvieira.com.br/" target="_blank"><img src="./img/site-refrativa-mtg-rmv-bg.png" class="img-fluid" alt="Site feito para o Cliente Dr. Matheus Vieira"></a>
+                        <a href="https://cirurgiarefrativa.drmatheusvieira.com.br/" target="_blank"><img src="/img/site-refrativa-mtg-rmv-bg.png" class="img-fluid" alt="Site feito para o Cliente Dr. Matheus Vieira"></a>
                         <div class="hand-container">
                             <i class="fa-regular fa-hand"></i>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-12">
-                        <img src="./img/site-wta3-rmv-bg.png" class="img-fluid" alt="Site feito para o Cliente...">
+                        <img src="/img/site-wta3-rmv-bg.png" class="img-fluid" alt="Site feito para o Cliente...">
                         <div class="hand-container">
                             <i class="fa-regular fa-hand"></i>
                         </div>
@@ -316,7 +347,7 @@
                     <hr>
 
                     <div class="col-lg-6 col-12 centraliza">
-                        <a href="https://api.whatsapp.com/send/?phone=5548988025053&text=Ol%C3%A1+vim+pelo+site+e+gostaria+de+saber+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0" target="_blank" class="cta-padrao">
+                        <a href="https://api.whatsapp.com/send?phone=5548988025053&text=Ol%C3%A1,%20visitei%20o%20seu%20site%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20seus%20servi%C3%A7os.%20Poderia%20me%20ajudar?%20%0A%0A" target="_blank" class="cta-padrao">
                             Veja mais +
                         </a>
                     </div>
@@ -335,7 +366,7 @@
 
                     <div class="col-lg-4 col-12">
                         <div class="card-parte-5 centraliza mb-4">
-                            <img src="./img/sites-mobile.png" class="img-fluid" alt="">
+                            <img src="/img/sites-mobile.png" class="img-fluid" alt="">
                             <h3>Criação de Sites e Lps</h3>
                             <p>Desenvolvimento de sites e landing pages personalizados para destacar sua marca e atrair clientes.</p>
                         </div>
@@ -343,7 +374,7 @@
                     
                     <div class="col-lg-4 col-12">
                         <div class="card-parte-5 centraliza mb-4">
-                            <img src="./img/metricas.png" alt="Métricas do Google">
+                            <img src="/img/metricas.png" alt="Métricas do Google">
                             <h3>Métricas do Google</h3>
                             <p>Monitoramento e análise das métricas do Google para otimizar a performance do seu site e melhorar sua presença online.</p>
                         </div>
@@ -351,7 +382,7 @@
                     
                     <div class="col-lg-4 col-12">
                         <div class="card-parte-5 centraliza mb-4">
-                            <img src="./img/icone-wordpress.png" class="img-fluid" alt="">
+                            <img src="/img/icone-wordpress.png" class="img-fluid" alt="">
                             <h3>Wordpress</h3>
                             <p>Criação e personalização de sites em WordPress, desde blogs simples até lojas virtuais complexas, com foco em design, funcionalidade e facilidade de uso.</p>
                         </div>
@@ -360,7 +391,7 @@
                     <!--Coluna 2-->
                     <div class="col-lg-4 col-12">
                         <div class="card-parte-5 centraliza">
-                            <img src="./img/trabalho-seo.png" class="img-fluid" alt="Trabalho de SEO">
+                            <img src="/img/trabalho-seo.png" class="img-fluid" alt="Trabalho de SEO">
                             <h3>Trabalho de SEO</h3>
                             <p>Implemento técnicas avançadas de SEO para otimizar seu site, melhorar o ranking nos motores de busca e atrair um público-alvo qualificado, aumentando a visibilidade e o alcance da sua marca.</p>
                         </div>
@@ -368,7 +399,7 @@
                     
                     <div class="col-lg-4 col-12">
                         <div class="card-parte-5 centraliza mb-4">
-                            <img src="./img/pagespeed.png" class="img-fluid" alt="Otimização de Site">
+                            <img src="/img/pagespeed.png" class="img-fluid" alt="Otimização de Site">
                             <h3>Otimização de Site</h3>
                             <p>Melhore a velocidade e a performance do seu site com otimizações técnicas, garantindo uma navegação rápida e eficiente para seus usuários, e melhorando seu posicionamento no Google.</p>
                         </div>
@@ -376,14 +407,14 @@
                     
                     <div class="col-lg-4 col-12">
                         <div class="card-parte-5 centraliza">
-                            <img src="./img/servidor.png" class="img-fluid" alt="">
+                            <img src="/img/servidor.png" class="img-fluid" alt="">
                             <h3>Migração de Servidor</h3>
                             <p>Realizo migração segura de sites para novos servidores, cuidando de todos os detalhes técnicos para garantir que seu site continue funcionando perfeitamente sem interrupções ou perdas de dados.</p>
                         </div>
                     </div>
                     
                     <div class="col-lg-6 col-12 centraliza">
-                        <a href="https://api.whatsapp.com/send/?phone=5548988025053&text=Ol%C3%A1+vim+pelo+site+e+gostaria+de+saber+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0" class="cta-padrao">
+                        <a href="https://api.whatsapp.com/send?phone=5548988025053&text=Ol%C3%A1,%20visitei%20o%20seu%20site%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20seus%20servi%C3%A7os.%20Poderia%20me%20ajudar?%20%0A%0A" class="cta-padrao">
                             Quero saber mais
                             <i class="fab fa-whatsapp"></i>
                         </a>
@@ -391,37 +422,64 @@
                 </div>
             </div>
         </section>
-              
-        <!--Parte 6-->
-        <section class="container-fluid bg-parte-6" id="Contato">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-12 centraliza">
-                        <h2>Ficou interessado? <span>Entre em Contato Comigo</span></h2>
-                    </div>
 
-                    <div class="col-lg-12 col-12">
-                        <div class="form-container">
-                            <form action="#" method="post">
-                                <div class="form-group">
-                                    <label for="name">Nome:</label>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email:</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone">Telefone:</label>
-                                    <input type="tel" id="phone" name="phone" required>
-                                </div>
-                                <button type="submit" class="submit-btn">Enviar</button>
-                            </form>
-                        </div>                        
-                    </div>
+        <section class="container-fluid bg-parte-6 py-5" data-aos="fade-left">
+            <div class="container">
+              <div class="row">
+                <!-- Título -->
+                <div class="col-12 text-center mb-4">
+                  <h2 class="section-title">Entre em Contato</h2>
+                  <p class="section-subtitle">Entre em contato comigo através das opções abaixo:</p>
                 </div>
+              </div>
+          
+              <!-- Informações de contato -->
+              <div class="row text-center">
+                <!-- Telefone -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="contact-item">
+                    <i class="fab fa-whatsapp fa-2x mb-3 i-wpp"></i>
+                    <h5 class="i-wpp">Whatsapp</h5>
+                    <p class="i-wpp">
+                        <a href="https://api.whatsapp.com/send?phone=5548988025053&text=Ol%C3%A1,%20visitei%20o%20seu%20site%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20seus%20servi%C3%A7os.%20Poderia%20me%20ajudar?%20%0A%0A" target="_blank">+55 (48) 98802-5053</a>
+                    </p>
+                  </div>
+                </div>
+          
+                <!-- E-mail -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="contact-item">
+                    <i class="fas fa-envelope fa-2x mb-3 i-email"></i>
+                    <h5 class="i-email">E-mail</h5>
+                    <p class="i-email"><a href="mailto:phelippekl@gmail.com">phelippekl@gmail.com</a></p>
+                  </div>
+                </div>
+          
+                <!-- Localização -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="contact-item">
+                    <i class="fas fa-map-marker-alt fa-2x mb-3 i-insta"></i>
+                    <h5>Localização</h5>
+                    <p>Presidente Prudente - SP, Brasil</p>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Redes Sociais -->
+              <div class="row mt-4">
+                <div class="col-12 text-center">
+                  <h5>Ou me siga nas redes sociais</h5>
+                  <div class="social-links mt-3">
+                    <a href="https://www.facebook.com/phelippe.luisi?comment_id=Y29tbWVudDoxNTcwODMyMDE2MzMyNjEyXzE1NzQ3NTE1MDI2MDczMzA%3D&__tn__=R*F" class="me-3 i-facebook" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://www.facebook.com/phelippe.luisi?comment_id=Y29tbWVudDoxNTcwODMyMDE2MzMyNjEyXzE1NzQ3NTE1MDI2MDczMzA%3D&__tn__=R*F" class="me-3 i-insta" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/phelippe-k-luisi-5303591b9/" class="me-3 i-linkedin" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+          </section>
+          
+            
     </main>
 
     <footer>
@@ -472,12 +530,12 @@
 
 
     <script>
-        AOS.init({
+        /*AOS.init({
         duration: 1800
-        });
+        });*/
     </script>
       
-    <script src="./src/script.js"></script>
+    <script src="/src/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
