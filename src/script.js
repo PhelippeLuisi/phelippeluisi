@@ -18,16 +18,49 @@ window.addEventListener("scroll", function() {
 });
 
 // Seleciona todos os elementos com a classe 'counter'
-document.addEventListener('DOMContentLoaded', () => {
-  const counters = document.querySelectorAll('.counter');
-  counters.forEach(counter => {
-      const target = parseInt(counter.getAttribute('data-count'), 10);
-      animateCounter(counter, target);
+// Função para animar os contadores
+function animateCounter(counter) {
+    const target = parseInt(counter.getAttribute('data-count'), 10);
+    let count = 0;
+    const increment = Math.ceil(target / 100); // Incremento suave
+  
+    const updateCounter = () => {
+      count += increment;
+      if (count > target) {
+        count = target; 
+      }
+      counter.textContent = `+${count}`;
+      if (count < target) {
+        setTimeout(updateCounter, 50); 
+      }
+    };
+  
+    updateCounter(); 
+  }
+  
+  // Intersection Observer para detectar quando a seção entra na tela
+  document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('.counter');
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const counter = entry.target;
+            animateCounter(counter); 
+            observer.unobserve(counter); 
+          }
+        });
+      },
+      { threshold: 0.5 } 
+    );
+  
+    counters.forEach(counter => {
+      observer.observe(counter); 
+    });
   });
-});
-
+  
 document.getElementById('theme-switch').addEventListener('change', function() {
-    document.body.classList.toggle('dark-mode'); // Alterna a classe do modo noturno
+    document.body.classList.toggle('dark-mode');
 });
 
 // Animação Inicio
@@ -75,3 +108,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggler = document.querySelector('.navbar-toggler');
+    const openIcon = document.querySelector('.open-icon');
+    const closeIcon = document.querySelector('.close-icon');
+    const navbar = document.querySelector('#navbarNav');
+  
+    toggler.addEventListener('click', () => {
+      // Verifica se o menu está visível
+      const isExpanded = navbar.classList.contains('show'); 
+  
+      if (isExpanded) {
+        // Quando o menu está aberto, trocar para o ícone de abrir
+        openIcon.classList.remove('d-none');
+        closeIcon.classList.add('d-none');
+      } else {
+        // Quando o menu está fechado, trocar para o ícone de fechar
+        openIcon.classList.add('d-none');
+        closeIcon.classList.remove('d-none');
+      }
+    });
+  });
+  
