@@ -1,0 +1,2617 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BPC/LOAS Autista | Vitória Albino Advocacia</title>
+  <meta name="description" content="Entenda se seu filho autista pode ter direito ao BPC/LOAS. Atendimento jurídico humanizado, online e presencial em Itaberaí/GO.">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <style>
+    :root {
+  --va-navy: #13233A;
+  --va-navy-dark: #0B1524;
+  --va-navy-soft: #1D314D;
+  --va-gold: #C9A24A;
+  --va-gold-light: #F3D37A;
+  --va-white: #FFFFFF;
+  --va-offwhite: #F7F4EE;
+  --va-cream: #FFF9EA;
+  --va-text: #263044;
+  --va-muted: #667085;
+  --va-border: rgba(19, 35, 58, 0.12);
+  --va-shadow: 0 22px 60px rgba(19, 35, 58, 0.12);
+  --va-shadow-hover: 0 28px 80px rgba(19, 35, 58, 0.18);
+  --va-radius: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 95px;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  color: var(--va-text);
+  background: var(--va-white);
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: var(--va-muted);
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lora", Georgia, serif;
+  color: var(--va-navy);
+  font-weight: 700;
+}
+
+::selection {
+  background: var(--va-gold);
+  color: var(--va-navy-dark);
+}
+
+/* =========================
+   Navbar
+========================= */
+
+.va-navbar {
+  z-index: 999;
+  padding: 14px 0;
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid rgba(19, 35, 58, 0.08);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 12px 34px rgba(11, 21, 36, 0.06);
+}
+
+.va-brand img {
+  max-height: 58px;
+  width: auto;
+}
+
+.va-navbar .nav-link {
+  color: var(--va-navy);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  padding: 8px 4px;
+  transition: 0.25s ease;
+}
+
+.va-navbar .nav-link:hover,
+.va-navbar .nav-link:focus {
+  color: var(--va-gold);
+}
+
+.va-toggler {
+  border: 1px solid rgba(19, 35, 58, 0.18);
+  box-shadow: none !important;
+}
+
+.va-toggler:focus {
+  box-shadow: 0 0 0 4px rgba(201, 162, 74, 0.18) !important;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+.va-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border-radius: 999px;
+  padding: 13px 24px;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  border: 0;
+  transition: 0.25s ease;
+  line-height: 1.1;
+}
+
+.va-btn-lg {
+  padding: 17px 30px;
+  font-size: 15px;
+}
+
+.va-btn-gold {
+  color: var(--va-navy-dark);
+  background: linear-gradient(135deg, var(--va-gold-light), var(--va-gold));
+  box-shadow: 0 16px 34px rgba(201, 162, 74, 0.28);
+}
+
+.va-btn-gold:hover {
+  color: var(--va-navy-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 22px 46px rgba(201, 162, 74, 0.36);
+}
+
+.va-btn-outline-light {
+  color: var(--va-white);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.va-btn-outline-light:hover {
+  color: var(--va-navy-dark);
+  background: var(--va-white);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   Hero
+========================= */
+
+.va-hero {
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--va-navy-dark);
+}
+
+.va-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.va-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 72% center;
+  filter: saturate(0.95);
+}
+
+.va-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background:
+    linear-gradient(90deg, rgba(11, 21, 36, 0.98) 0%, rgba(19, 35, 58, 0.92) 36%, rgba(19, 35, 58, 0.54) 68%, rgba(11, 21, 36, 0.34) 100%),
+    radial-gradient(circle at 18% 30%, rgba(201, 162, 74, 0.16), transparent 34%);
+}
+
+.va-hero .container {
+  z-index: 3;
+}
+
+.va-hero-content {
+  padding-top: 110px;
+  max-width: 760px;
+}
+
+.va-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 17px;
+  border-radius: 999px;
+  color: var(--va-gold-light);
+  background: rgba(201, 162, 74, 0.1);
+  border: 1px solid rgba(201, 162, 74, 0.34);
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 24px;
+}
+
+.va-hero h1 {
+  color: var(--va-white);
+  font-size: clamp(40px, 5.4vw, 76px);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+  margin-bottom: 24px;
+}
+
+.va-hero h1 span {
+  color: var(--va-gold-light);
+  font-style: italic;
+}
+
+.va-hero-text {
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 680px;
+  font-size: 18px;
+  line-height: 1.65;
+  font-weight: 500;
+}
+
+.va-hero-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px 24px;
+  max-width: 800px;
+}
+
+.va-hero-checks span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.va-hero-checks i {
+  color: var(--va-gold-light);
+}
+
+.va-color-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 7px;
+}
+
+.va-color-line span:nth-child(1) {
+  background: #E3445A;
+}
+
+.va-color-line span:nth-child(2) {
+  background: #F5C94B;
+}
+
+.va-color-line span:nth-child(3) {
+  background: #2B75FF;
+}
+
+.va-color-line span:nth-child(4) {
+  background: #23A66A;
+}
+
+/* =========================
+   Trust
+========================= */
+
+.va-trust {
+  padding: 42px 0;
+  background: var(--va-navy);
+}
+
+.va-trust-card {
+  height: 100%;
+  padding: 28px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  transition: 0.25s ease;
+}
+
+.va-trust-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.085);
+}
+
+.va-trust-card i {
+  color: var(--va-gold-light);
+  font-size: 28px;
+  margin-bottom: 14px;
+  display: inline-flex;
+}
+
+.va-trust-card h2 {
+  color: var(--va-white);
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.va-trust-card p {
+  color: rgba(255, 255, 255, 0.72);
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+/* =========================
+   Sections
+========================= */
+
+.va-section {
+  padding: 96px 0;
+  background: var(--va-white);
+}
+
+.va-section-light {
+  background:
+    radial-gradient(circle at top left, rgba(201, 162, 74, 0.1), transparent 28%),
+    linear-gradient(180deg, var(--va-offwhite), var(--va-white));
+}
+
+.va-section-navy {
+  background:
+    radial-gradient(circle at top right, rgba(201, 162, 74, 0.14), transparent 32%),
+    linear-gradient(180deg, var(--va-navy), var(--va-navy-dark));
+}
+
+.va-section h2 {
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  margin-bottom: 20px;
+}
+
+.va-section-navy h2,
+.va-section-navy h3 {
+  color: var(--va-white);
+}
+
+.va-section-navy p,
+.va-section-navy .va-section-sub {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.va-section-label {
+  display: inline-flex;
+  color: var(--va-gold);
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+.va-label-light {
+  color: var(--va-gold-light);
+}
+
+.va-section-sub {
+  max-width: 720px;
+  margin: 0 auto;
+  color: var(--va-muted);
+  font-size: 17px;
+}
+
+/* =========================
+   Info Box
+========================= */
+
+.va-info-box {
+  position: relative;
+  padding: 40px;
+  border-radius: 30px;
+  background: var(--va-white);
+  box-shadow: var(--va-shadow);
+  border: 1px solid rgba(201, 162, 74, 0.18);
+  overflow: hidden;
+}
+
+.va-info-box::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  right: -70px;
+  top: -70px;
+  border-radius: 999px;
+  background: rgba(201, 162, 74, 0.14);
+}
+
+.va-info-box h3 {
+  position: relative;
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+
+.va-info-box p,
+.va-info-box ul {
+  position: relative;
+}
+
+.va-info-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 22px 0 0;
+}
+
+.va-info-box li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--va-text);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.va-info-box li i {
+  color: #23A66A;
+}
+
+/* =========================
+   Cards
+========================= */
+
+.va-card,
+.va-diff-card {
+  height: 100%;
+  padding: 32px;
+  border-radius: var(--va-radius);
+  background: var(--va-white);
+  border: 1px solid var(--va-border);
+  box-shadow: 0 14px 38px rgba(19, 35, 58, 0.07);
+  transition: 0.25s ease;
+}
+
+.va-card:hover,
+.va-diff-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--va-shadow-hover);
+  border-color: rgba(201, 162, 74, 0.35);
+}
+
+.va-card h3,
+.va-diff-card h3 {
+  font-size: 24px;
+  margin: 16px 0 10px;
+}
+
+.va-card p,
+.va-diff-card p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.va-card-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+}
+
+.va-icon-blue {
+  background: rgba(43, 117, 255, 0.1);
+  color: #2B75FF;
+}
+
+.va-icon-gold {
+  background: rgba(201, 162, 74, 0.14);
+  color: var(--va-gold);
+}
+
+.va-icon-green {
+  background: rgba(35, 166, 106, 0.1);
+  color: #23A66A;
+}
+
+.va-icon-red {
+  background: rgba(227, 68, 90, 0.1);
+  color: #E3445A;
+}
+
+/* =========================
+   Documentos
+========================= */
+
+.va-doc-card {
+  height: 100%;
+  padding: 32px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: 0.25s ease;
+}
+
+.va-doc-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.105);
+  border-color: rgba(243, 211, 122, 0.35);
+}
+
+.va-doc-card span {
+  display: inline-flex;
+  color: var(--va-gold-light);
+  font-family: "Lora", Georgia, serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.va-doc-card h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.va-doc-card p {
+  color: rgba(255, 255, 255, 0.72);
+  margin: 0;
+  font-size: 15px;
+}
+
+.va-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 22px 26px;
+  border-radius: 20px;
+  background: rgba(243, 211, 122, 0.11);
+  border: 1px solid rgba(243, 211, 122, 0.24);
+}
+
+.va-tip i {
+  color: var(--va-gold-light);
+  font-size: 24px;
+  flex: 0 0 auto;
+}
+
+.va-tip p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 600;
+}
+
+/* =========================
+   Formulário
+========================= */
+
+.va-form-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(201, 162, 74, 0.16), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(43, 117, 255, 0.08), transparent 34%),
+    linear-gradient(180deg, #F7F4EE 0%, #FFFFFF 100%);
+}
+
+.va-form-card {
+  position: relative;
+  padding: 46px;
+  border-radius: 34px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(19, 35, 58, 0.09);
+  box-shadow: 0 30px 90px rgba(19, 35, 58, 0.15);
+  backdrop-filter: blur(14px);
+}
+
+.va-form-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border-radius: 999px;
+  background: rgba(35, 166, 106, 0.09);
+  color: #168052;
+  font-size: 13px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.va-form-card h2 {
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  margin-bottom: 12px;
+}
+
+.va-form-card > p {
+  max-width: 650px;
+  margin-bottom: 24px;
+}
+
+.va-mini-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.va-mini-info span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  text-align: center;
+  padding: 13px 10px;
+  border-radius: 16px;
+  background: #FAFBFF;
+  border: 1px solid rgba(19, 35, 58, 0.09);
+  color: var(--va-navy);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.va-mini-info i {
+  color: var(--va-gold);
+}
+
+.va-progress-wrap {
+  margin-bottom: 28px;
+}
+
+.va-progress-text {
+  display: flex;
+  justify-content: space-between;
+  color: var(--va-muted);
+  font-size: 13px;
+  font-weight: 900;
+  margin-bottom: 9px;
+}
+
+.va-progress {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(19, 35, 58, 0.1);
+  overflow: hidden;
+}
+
+.va-progress .progress-bar {
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--va-navy), var(--va-gold), #23A66A);
+  transition: width 0.35s ease;
+}
+
+.va-step {
+  display: none;
+  animation: vaFadeUp 0.28s ease both;
+}
+
+.va-step.active {
+  display: block;
+}
+
+@keyframes vaFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.va-step h3 {
+  font-size: clamp(24px, 3vw, 32px);
+  margin-bottom: 8px;
+}
+
+.va-step > p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.va-option {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  text-align: left;
+  gap: 12px;
+  padding: 18px;
+  margin-bottom: 12px;
+  border-radius: 18px;
+  background: #FAFBFF;
+  border: 2px solid rgba(19, 35, 58, 0.1);
+  box-shadow: 0 12px 26px rgba(19, 35, 58, 0.05);
+  cursor: pointer;
+  transition: 0.22s ease;
+  color: var(--va-text);
+}
+
+.va-option::after {
+  content: "→";
+  position: absolute;
+  right: 18px;
+  top: 22px;
+  color: rgba(19, 35, 58, 0.3);
+  font-weight: 900;
+}
+
+.va-option:hover {
+  transform: translateY(-2px);
+  border-color: rgba(201, 162, 74, 0.55);
+  box-shadow: 0 18px 36px rgba(19, 35, 58, 0.11);
+}
+
+.va-option.selected {
+  background: linear-gradient(180deg, var(--va-cream), #FFFFFF);
+  border-color: var(--va-gold);
+}
+
+.va-option.selected::after {
+  content: "✓";
+  color: #23A66A;
+}
+
+.va-option span {
+  grid-row: span 2;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(201, 162, 74, 0.13);
+  color: var(--va-gold);
+  font-size: 21px;
+}
+
+.va-option strong {
+  display: block;
+  padding-right: 26px;
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--va-navy);
+}
+
+.va-option small {
+  display: block;
+  color: var(--va-muted);
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+.va-input {
+  height: 56px;
+  border-radius: 16px;
+  border: 2px solid rgba(19, 35, 58, 0.12);
+  background: #FAFBFF;
+  color: var(--va-text);
+  font-weight: 600;
+  box-shadow: none !important;
+}
+
+.va-input:focus {
+  border-color: var(--va-gold);
+  background: var(--va-white);
+  box-shadow: 0 0 0 4px rgba(201, 162, 74, 0.12) !important;
+}
+
+.form-label {
+  color: var(--va-navy);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.va-privacy-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 16px;
+  padding: 13px 15px;
+  border-radius: 15px;
+  background: #FAFBFF;
+  border: 1px solid rgba(19, 35, 58, 0.09);
+  color: var(--va-muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.va-privacy-note i {
+  color: var(--va-gold);
+  flex: 0 0 auto;
+}
+
+.va-back-btn {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  color: var(--va-navy);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.va-back-btn.show {
+  display: inline-flex;
+}
+
+/* =========================
+   Lawyer Section
+========================= */
+
+.va-lawyer-photo {
+  position: relative;
+  border-radius: 34px;
+  padding: 12px;
+  background: linear-gradient(135deg, var(--va-gold-light), var(--va-gold));
+  box-shadow: var(--va-shadow);
+}
+
+.va-lawyer-photo::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  bottom: -18px;
+  width: 140px;
+  height: 140px;
+  border-radius: 28px;
+  background: rgba(19, 35, 58, 0.08);
+  z-index: 0;
+}
+
+.va-lawyer-photo img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 26px;
+  display: block;
+}
+
+.va-lawyer-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.va-lawyer-tags span {
+  display: inline-flex;
+  padding: 9px 14px;
+  border-radius: 999px;
+  background: var(--va-white);
+  border: 1px solid rgba(19, 35, 58, 0.1);
+  color: var(--va-navy);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* =========================
+   Diferenciais
+========================= */
+
+.va-diff-card i {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: rgba(201, 162, 74, 0.12);
+  color: var(--va-gold);
+  font-size: 27px;
+}
+
+/* =========================
+   CTA Strip
+========================= */
+
+.va-cta-strip {
+  padding: 54px 0;
+  background:
+    radial-gradient(circle at top right, rgba(243, 211, 122, 0.18), transparent 28%),
+    linear-gradient(135deg, var(--va-navy), var(--va-navy-dark));
+}
+
+.va-cta-strip h2 {
+  color: var(--va-white);
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  margin-bottom: 12px;
+}
+
+.va-cta-strip p {
+  color: rgba(255, 255, 255, 0.74);
+  margin-bottom: 18px;
+}
+
+.va-cta-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.va-cta-items span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--va-white);
+  padding: 9px 13px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.va-cta-items i {
+  color: var(--va-gold-light);
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.va-accordion {
+  display: grid;
+  gap: 14px;
+}
+
+.va-accordion .accordion-item {
+  border: 1px solid rgba(19, 35, 58, 0.1);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(19, 35, 58, 0.05);
+}
+
+.va-accordion .accordion-button {
+  padding: 20px 22px;
+  color: var(--va-navy);
+  background: var(--va-white);
+  font-weight: 900;
+  font-size: 16px;
+  box-shadow: none !important;
+}
+
+.va-accordion .accordion-button:not(.collapsed) {
+  color: var(--va-navy);
+  background: var(--va-cream);
+}
+
+.va-accordion .accordion-button::after {
+  filter: sepia(1) saturate(2);
+}
+
+.va-accordion .accordion-body {
+  padding: 0 22px 22px;
+  color: var(--va-muted);
+  line-height: 1.7;
+  background: var(--va-cream);
+}
+
+/* =========================
+   CTA Final
+========================= */
+
+.va-final-cta {
+  position: relative;
+  overflow: hidden;
+  padding: 92px 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(201, 162, 74, 0.2), transparent 28%),
+    linear-gradient(180deg, var(--va-navy), var(--va-navy-dark));
+}
+
+.va-final-cta h2 {
+  color: var(--va-white);
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+  margin-bottom: 18px;
+}
+
+.va-final-cta p {
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 720px;
+  margin: 0 auto 28px;
+  font-size: 18px;
+}
+
+.va-final-phone {
+  margin-top: 22px !important;
+  margin-bottom: 0 !important;
+  color: rgba(255, 255, 255, 0.72) !important;
+  font-size: 15px !important;
+}
+
+.va-final-phone strong {
+  color: var(--va-gold-light);
+}
+
+/* =========================
+   Footer
+========================= */
+
+.va-footer {
+  padding: 70px 0 32px;
+  background: #07101D;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.va-footer-logo {
+  max-height: 74px;
+  width: auto;
+  margin-bottom: 22px;
+}
+
+.va-footer p {
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 14px;
+  max-width: 420px;
+}
+
+.va-footer h3 {
+  color: var(--va-white);
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.va-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.va-footer li {
+  margin-bottom: 12px;
+}
+
+.va-footer a {
+  color: rgba(255, 255, 255, 0.72);
+  transition: 0.22s ease;
+}
+
+.va-footer a:hover {
+  color: var(--va-gold-light);
+}
+
+.va-social {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.va-social a {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  color: var(--va-white);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.va-social a:hover {
+  background: var(--va-gold);
+  color: var(--va-navy-dark);
+}
+
+.va-contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.55;
+}
+
+.va-contact-list i {
+  color: var(--va-gold-light);
+  margin-top: 3px;
+  flex: 0 0 auto;
+}
+
+.va-footer-disclaimer {
+  margin-top: 48px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.va-footer-disclaimer p {
+  max-width: 100%;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.52);
+}
+
+/* =========================
+   WhatsApp Floating
+========================= */
+
+.va-whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  color: #fff;
+  background: #25D366;
+  font-size: 31px;
+  box-shadow: 0 16px 34px rgba(37, 211, 102, 0.34);
+  transition: 0.25s ease;
+}
+
+.va-whatsapp-float:hover {
+  color: #fff;
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 24px 48px rgba(37, 211, 102, 0.44);
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 1199px) {
+  .va-hero h1 {
+    font-size: clamp(38px, 6vw, 62px);
+  }
+
+  .va-hero-content {
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    scroll-padding-top: 86px;
+  }
+
+  .va-navbar {
+    padding: 10px 0;
+  }
+
+  .va-brand img {
+    max-height: 50px;
+  }
+
+  .va-navbar .navbar-collapse {
+    margin-top: 14px;
+    padding: 18px;
+    border-radius: 20px;
+    background: var(--va-white);
+    border: 1px solid rgba(19, 35, 58, 0.08);
+    box-shadow: 0 22px 50px rgba(19, 35, 58, 0.12);
+  }
+
+  .va-navbar .nav-link {
+    padding: 10px 0;
+  }
+
+  .va-hero {
+    min-height: auto;
+  }
+
+  .va-hero .row {
+    min-height: 780px !important;
+  }
+
+  .va-hero-bg img {
+    object-position: 70% center;
+  }
+
+  .va-hero-overlay {
+    background:
+      linear-gradient(90deg, rgba(11, 21, 36, 0.98) 0%, rgba(19, 35, 58, 0.94) 48%, rgba(19, 35, 58, 0.7) 100%),
+      linear-gradient(180deg, rgba(11, 21, 36, 0.16), rgba(11, 21, 36, 0.55));
+  }
+
+  .va-section {
+    padding: 76px 0;
+  }
+
+  .va-form-card {
+    padding: 36px;
+  }
+
+  .va-mini-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  p {
+    font-size: 15px;
+  }
+
+  .va-btn,
+  .va-btn-lg {
+    width: 100%;
+    padding: 16px 20px;
+  }
+
+  .va-hero .row {
+    min-height: 760px !important;
+    align-items: flex-start !important;
+  }
+
+  .va-hero-content {
+    padding-top: 128px;
+  }
+
+  .va-hero h1 {
+    font-size: 42px;
+    line-height: 1.02;
+    letter-spacing: -0.05em;
+  }
+
+  .va-hero-text {
+    font-size: 16px;
+  }
+
+  .va-hero-checks {
+    display: grid;
+    gap: 10px;
+  }
+
+  .va-hero-bg img {
+    object-position: 74% center;
+  }
+
+  .va-hero-overlay {
+    background:
+      linear-gradient(180deg, rgba(11, 21, 36, 0.96) 0%, rgba(19, 35, 58, 0.94) 42%, rgba(19, 35, 58, 0.78) 100%);
+  }
+
+  .va-trust {
+    padding: 30px 0;
+  }
+
+  .va-section {
+    padding: 64px 0;
+  }
+
+  .va-section h2 {
+    font-size: 34px;
+  }
+
+  .va-card,
+  .va-diff-card,
+  .va-doc-card {
+    padding: 26px;
+  }
+
+  .va-info-box {
+    padding: 30px 24px;
+    border-radius: 24px;
+  }
+
+  .va-info-box h3 {
+    font-size: 27px;
+  }
+
+  .va-form-card {
+    padding: 28px 20px;
+    border-radius: 26px;
+  }
+
+  .va-option {
+    grid-template-columns: 42px 1fr;
+    padding: 16px;
+  }
+
+  .va-option span {
+    width: 38px;
+    height: 38px;
+    font-size: 19px;
+  }
+
+  .va-lawyer-photo {
+    border-radius: 28px;
+  }
+
+  .va-lawyer-photo img {
+    border-radius: 22px;
+  }
+
+  .va-cta-strip {
+    padding: 44px 0;
+  }
+
+  .va-final-cta {
+    padding: 70px 0;
+  }
+
+  .va-footer {
+    padding: 54px 0 30px;
+  }
+
+  .va-whatsapp-float {
+    right: 16px;
+    bottom: 16px;
+    width: 56px;
+    height: 56px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .va-badge {
+    font-size: 11px;
+    padding: 9px 13px;
+  }
+
+  .va-hero h1 {
+    font-size: 36px;
+  }
+
+  .va-hero .row {
+    min-height: 720px !important;
+  }
+
+  .va-section h2 {
+    font-size: 31px;
+  }
+
+  .va-section-sub {
+    font-size: 15px;
+  }
+
+  .va-trust-card,
+  .va-card,
+  .va-diff-card,
+  .va-doc-card {
+    border-radius: 20px;
+  }
+
+  .va-form-card h2 {
+    font-size: 30px;
+  }
+
+  .va-step h3 {
+    font-size: 24px;
+  }
+
+  .va-accordion .accordion-button {
+    font-size: 15px;
+    padding: 18px;
+  }
+
+  .va-accordion .accordion-body {
+    padding: 0 18px 18px;
+  }
+
+  .va-footer-logo {
+    max-height: 64px;
+  }
+}
+
+/* =========================
+   CTA Strip com foto
+========================= */
+
+.va-cta-lawyer {
+  position: relative;
+  overflow: hidden;
+  padding: 56px 0;
+}
+
+.va-cta-lawyer::before {
+  content: "";
+  position: absolute;
+  right: -120px;
+  top: -120px;
+  width: 340px;
+  height: 340px;
+  border-radius: 999px;
+  background: rgba(243, 211, 122, 0.14);
+  pointer-events: none;
+}
+
+.va-cta-mini {
+  display: inline-flex;
+  margin-bottom: 12px;
+  color: var(--va-gold-light);
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.va-cta-lawyer-box {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 22px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.16);
+}
+
+.va-cta-lawyer-photo {
+  position: relative;
+  flex: 0 0 138px;
+  width: 138px;
+  height: 138px;
+  border-radius: 999px;
+  padding: 5px;
+  background: linear-gradient(135deg, var(--va-gold-light), var(--va-gold));
+  box-shadow: 0 18px 38px rgba(201, 162, 74, 0.22);
+}
+
+.va-cta-lawyer-photo::after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 999px;
+  border: 1px solid rgba(243, 211, 122, 0.25);
+  pointer-events: none;
+}
+
+.va-cta-lawyer-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 999px;
+  display: block;
+}
+
+.va-cta-lawyer-content h3 {
+  color: var(--va-white);
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.va-cta-lawyer-content p {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+  line-height: 1.55;
+  margin-bottom: 16px;
+}
+
+.va-cta-lawyer-content .va-btn {
+  padding: 13px 20px;
+  font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+  .va-cta-lawyer {
+    text-align: center;
+  }
+
+  .va-cta-lawyer .va-cta-items {
+    justify-content: center;
+  }
+
+  .va-cta-lawyer-box {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .va-cta-lawyer-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 26px 20px;
+  }
+
+  .va-cta-lawyer-photo {
+    flex: 0 0 132px;
+    width: 132px;
+    height: 132px;
+  }
+
+  .va-cta-lawyer-content .va-btn {
+    width: 100%;
+  }
+}
+
+/* =========================
+   Ajuste pós-hero unificado
+========================= */
+
+.va-trust {
+  padding: 58px 0 34px;
+  background:
+    radial-gradient(circle at 86% 12%, rgba(201, 162, 74, 0.10), transparent 30%),
+    linear-gradient(180deg, var(--va-navy) 0%, var(--va-navy-dark) 100%);
+}
+
+.va-cta-strip.va-cta-lawyer {
+  padding: 34px 0 74px;
+  background:
+    linear-gradient(180deg, var(--va-navy-dark) 0%, var(--va-navy-dark) 100%);
+}
+
+.va-cta-lawyer::before {
+  display: none;
+}
+
+/* deixa a faixa mais como card interno, não como outra seção */
+.va-cta-lawyer-box {
+  background: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.18);
+}
+
+/* reduz sensação de bloco separado */
+.va-cta-strip h2 {
+  max-width: 760px;
+}
+
+.va-cta-strip p {
+  max-width: 740px;
+}
+
+/* tira aquele círculo dourado grande que parece outro fundo */
+.va-cta-lawyer .container {
+  position: relative;
+  z-index: 2;
+}
+
+.va-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 72% center;
+}
+
+.va-hero-overlay {
+  background:
+    linear-gradient(90deg, rgba(11, 21, 36, 0.98) 0%, rgba(19, 35, 58, 0.88) 38%, rgba(19, 35, 58, 0.42) 68%, rgba(11, 21, 36, 0.12) 100%);
+}
+
+@media (max-width: 767px) {
+  .va-hero-bg img {
+    object-position: 72% center;
+  }
+
+  .va-hero-overlay {
+    background:
+      linear-gradient(180deg, rgba(11, 21, 36, 0.96) 0%, rgba(19, 35, 58, 0.92) 48%, rgba(19, 35, 58, 0.78) 100%);
+  }
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="va-navbar navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand va-brand" href="#inicio" aria-label="Vitória Albino Advocacia">
+        <img src="./img-dra/logo-header-horizontal-transparente.png" alt="Vitória Albino Advocacia">
+      </a>
+
+      <button class="navbar-toggler va-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <nav class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Início</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#direito">Quem tem direito</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#documentos">Documentos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#analise">Análise</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#duvidas">Dúvidas</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="btn va-btn va-btn-gold" href="https://wa.me/556293581157?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20sobre%20BPC%2FLOAS%20Autista%20e%20gostaria%20de%20fazer%20uma%20an%C3%A1lise%20inicial." target="_blank">
+              Falar com especialista
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="inicio" class="va-hero container-fluid position-relative">
+      <div class="va-hero-bg">
+        <img src="./img-dra/banner-2.png" alt="Mãe acolhendo criança em ambiente familiar">
+      </div>
+
+      <div class="va-hero-overlay"></div>
+
+      <div class="container position-relative">
+        <div class="row align-items-center min-vh-100 py-5">
+          <div class="col-xl-7 col-lg-8 col-12">
+            <div class="va-hero-content">
+              <span class="va-badge">
+                Análise inicial · Atendimento online
+              </span>
+
+              <h1>
+                Seu filho autista pode ter direito ao
+                <span>BPC/LOAS do INSS</span>
+              </h1>
+
+              <p class="va-hero-text">
+                Faça uma análise inicial e entenda se sua família preenche os requisitos para solicitar o benefício assistencial, mesmo em casos de negativa do INSS ou dúvidas sobre renda familiar.
+              </p>
+
+              <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+                <a href="#analise" class="btn va-btn va-btn-gold va-btn-lg">
+                  Descobrir se posso solicitar
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+
+                <a href="https://wa.me/556293581157?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20sobre%20BPC%2FLOAS%20Autista%20e%20gostaria%20de%20fazer%20uma%20an%C3%A1lise%20inicial." target="_blank" class="btn va-btn va-btn-outline-light va-btn-lg">
+                  Chamar no WhatsApp
+                </a>
+              </div>
+
+              <div class="va-hero-checks mt-4">
+                <span><i class="bi bi-check2-circle"></i> Análise inicial pelo WhatsApp</span>
+                <span><i class="bi bi-check2-circle"></i> Atendimento humano</span>
+                <span><i class="bi bi-check2-circle"></i> Orientação sobre documentos</span>
+                <span><i class="bi bi-check2-circle"></i> Atendimento online e presencial</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="va-color-line">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+
+    <!-- Barra de confiança -->
+    <section class="va-trust container-fluid">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="va-trust-card">
+              <i class="bi bi-shield-check"></i>
+              <h2>Atuação previdenciária</h2>
+              <p>Orientação jurídica em benefícios do INSS e direitos assistenciais.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="va-trust-card">
+              <i class="bi bi-heart"></i>
+              <h2>Famílias de autistas</h2>
+              <p>Atendimento voltado a mães, pais e responsáveis por crianças com TEA.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="va-trust-card">
+              <i class="bi bi-camera-video"></i>
+              <h2>Online e presencial</h2>
+              <p>Atendimento remoto e presencial em Itaberaí/GO.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="va-trust-card">
+              <i class="bi bi-file-earmark-text"></i>
+              <h2>INSS negou?</h2>
+              <p>A negativa pode ser analisada para entender os próximos passos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA faixa com foto da advogada -->
+    <section class="va-cta-strip va-cta-lawyer container-fluid">
+        <div class="container">
+            <div class="row align-items-center g-4">
+            
+            <div class="col-lg-7 col-12">
+                <span class="va-cta-mini">Vitória Albino Advocacia</span>
+
+                <h2>Atendimento online e presencial em Itaberaí/GO</h2>
+
+                <p>
+                Fale com a Vitória Albino Advocacia e receba uma orientação inicial sobre BPC/LOAS Autista, com atendimento humanizado e linguagem simples.
+                </p>
+
+                <div class="va-cta-items">
+                <span><i class="bi bi-camera-video"></i> Videochamada</span>
+                <span><i class="bi bi-whatsapp"></i> WhatsApp</span>
+                <span><i class="bi bi-geo-alt"></i> Itaberaí/GO</span>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-12">
+                <div class="va-cta-lawyer-box">
+                <div class="va-cta-lawyer-photo">
+                    <img src="./img-dra/dra-vitoria.jpg" alt="Dra. Vitória Albino">
+                </div>
+
+                <div class="va-cta-lawyer-content">
+                    <h3>Dra. Vitória Albino</h3>
+                    <p>Orientação jurídica para famílias que buscam entender seus direitos junto ao INSS.</p>
+
+                    <a href="https://wa.me/556293581157?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20sobre%20BPC%2FLOAS%20Autista%20e%20gostaria%20de%20fazer%20uma%20an%C3%A1lise%20inicial." target="_blank" class="btn va-btn va-btn-gold">
+                    Agendar atendimento
+                    <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section> 
+
+    <!-- O que é -->
+    <section id="direito" class="va-section va-section-light container-fluid">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 col-12">
+            <span class="va-section-label">Entenda o benefício</span>
+
+            <h2>O que é o BPC/LOAS e por que uma criança autista pode ter direito?</h2>
+
+            <p>
+              O Benefício de Prestação Continuada, conhecido como BPC/LOAS, é um benefício assistencial pago pelo INSS no valor de um salário-mínimo mensal para pessoas com deficiência e idosos que preencham os requisitos legais.
+            </p>
+
+            <p>
+              Crianças e adolescentes com Transtorno do Espectro Autista podem se enquadrar como pessoas com deficiência para fins de BPC/LOAS, desde que seja comprovada a condição, a realidade social da família e os demais requisitos exigidos.
+            </p>
+
+            <p>
+              A análise envolve documentos médicos, CadÚnico atualizado, renda familiar, gastos com tratamentos, terapias, medicamentos e outros fatores que demonstram a vulnerabilidade da família.
+            </p>
+
+            <a href="#analise" class="btn va-btn va-btn-gold mt-3">
+              Fazer análise inicial
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <div class="va-info-box">
+              <h3>O INSS negou o pedido?</h3>
+
+              <p>
+                A negativa do INSS não significa, necessariamente, que a família não possui direito. Em muitos casos, é possível revisar a documentação, entender o motivo da negativa e avaliar se há caminho para recurso ou nova solicitação.
+              </p>
+
+              <ul>
+                <li><i class="bi bi-check2"></i> Análise da negativa</li>
+                <li><i class="bi bi-check2"></i> Orientação sobre documentos</li>
+                <li><i class="bi bi-check2"></i> Avaliação do melhor caminho</li>
+                <li><i class="bi bi-check2"></i> Atendimento com linguagem simples</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quem pode ter direito -->
+    <section class="va-section container-fluid">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8 col-12">
+            <span class="va-section-label">Quem pode solicitar</span>
+
+            <h2>Veja alguns sinais de que sua família deve buscar orientação</h2>
+
+            <p class="va-section-sub">
+              Cada caso precisa ser analisado individualmente, mas alguns pontos costumam ser importantes para avaliar a possibilidade do BPC/LOAS.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="va-card">
+              <div class="va-card-icon va-icon-blue">
+                <i class="bi bi-puzzle"></i>
+              </div>
+
+              <h3>Diagnóstico de TEA</h3>
+              <p>Criança ou adolescente com diagnóstico de Transtorno do Espectro Autista, com laudo ou acompanhamento médico.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="va-card">
+              <div class="va-card-icon va-icon-gold">
+                <i class="bi bi-house-heart"></i>
+              </div>
+
+              <h3>Vulnerabilidade familiar</h3>
+              <p>Família com renda limitada, dificuldades financeiras ou gastos altos com terapias, medicamentos e cuidados.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="va-card">
+              <div class="va-card-icon va-icon-green">
+                <i class="bi bi-clipboard-check"></i>
+              </div>
+
+              <h3>CadÚnico atualizado</h3>
+              <p>Inscrição no CadÚnico com informações corretas e atualizadas junto ao CRAS do município.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="va-card">
+              <div class="va-card-icon va-icon-red">
+                <i class="bi bi-file-medical"></i>
+              </div>
+
+              <h3>Laudos e relatórios</h3>
+              <p>Documentos médicos, escolares e terapêuticos ajudam a demonstrar a realidade da criança e da família.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="va-card">
+              <div class="va-card-icon va-icon-blue">
+                <i class="bi bi-x-circle"></i>
+              </div>
+
+              <h3>Pedido negado</h3>
+              <p>Quem teve o pedido negado pelo INSS pode buscar orientação para entender o motivo e avaliar os próximos passos.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="va-card">
+              <div class="va-card-icon va-icon-gold">
+                <i class="bi bi-chat-dots"></i>
+              </div>
+
+              <h3>Dúvidas sobre renda</h3>
+              <p>Mesmo quando há dúvidas sobre o limite de renda, gastos essenciais da família podem ser relevantes na análise.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Documentos -->
+    <section id="documentos" class="va-section va-section-navy container-fluid">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8 col-12">
+            <span class="va-section-label va-label-light">Documentação</span>
+
+            <h2>Documentos importantes para solicitar o BPC/LOAS</h2>
+
+            <p class="va-section-sub">
+              A organização dos documentos é uma das etapas mais importantes para fortalecer o pedido junto ao INSS.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="va-doc-card">
+              <span>01</span>
+              <h3>Laudo médico com CID</h3>
+              <p>Documento médico com diagnóstico de TEA e descrição das limitações e necessidades da criança.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="va-doc-card">
+              <span>02</span>
+              <h3>CadÚnico atualizado</h3>
+              <p>Cadastro atualizado no CRAS, com informações corretas sobre a composição e renda familiar.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="va-doc-card">
+              <span>03</span>
+              <h3>Documentos pessoais</h3>
+              <p>RG, CPF, certidão de nascimento, comprovante de residência e documentos dos membros da família.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="va-doc-card">
+              <span>04</span>
+              <h3>Comprovantes de renda</h3>
+              <p>Contracheques, extratos, declarações ou outros documentos que demonstrem a realidade econômica da família.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="va-doc-card">
+              <span>05</span>
+              <h3>Relatórios de terapias</h3>
+              <p>Relatórios de psicólogo, fonoaudiólogo, terapeuta ocupacional, escola ou outros acompanhamentos.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="va-doc-card">
+              <span>06</span>
+              <h3>Gastos com saúde</h3>
+              <p>Comprovantes de despesas com medicamentos, consultas, terapias, transporte e cuidados especiais.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="va-tip mt-5">
+          <i class="bi bi-info-circle"></i>
+          <p>
+            Não tem todos os documentos ainda? A análise inicial ajuda a entender o que falta e quais próximos passos podem ser tomados.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulário multi-etapas -->
+    <section id="analise" class="va-section va-form-section container-fluid">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8 col-lg-9 col-12">
+            <div class="va-form-card">
+              <span class="va-form-badge">
+                <i class="bi bi-whatsapp"></i>
+                Análise pelo WhatsApp
+              </span>
+
+              <h2>Descubra se sua família pode solicitar o BPC/LOAS</h2>
+
+              <p>
+                Responda algumas perguntas rápidas para iniciar uma conversa mais direcionada com a equipe da Vitória Albino Advocacia.
+              </p>
+
+              <div class="va-mini-info">
+                <span><i class="bi bi-clock"></i> Rápido</span>
+                <span><i class="bi bi-chat-dots"></i> Pelo WhatsApp</span>
+                <span><i class="bi bi-person-heart"></i> Atendimento humano</span>
+              </div>
+
+              <div class="va-progress-wrap">
+                <div class="va-progress-text">
+                  <span id="progressText">Etapa 1 de 4</span>
+                  <span id="progressPercent">25%</span>
+                </div>
+
+                <div class="progress va-progress">
+                  <div class="progress-bar" id="progressBar" style="width: 25%;"></div>
+                </div>
+              </div>
+
+              <form id="formBpcAutista">
+                <!-- Etapa 1 -->
+                <div class="va-step active">
+                  <h3>A criança possui diagnóstico de autismo?</h3>
+                  <p>Essa informação ajuda a entender melhor o caso e orientar a análise inicial.</p>
+
+                  <button type="button" class="va-option" data-value="Sim">
+                    <span><i class="bi bi-check2-circle"></i></span>
+                    <strong>Sim</strong>
+                    <small>Já possui diagnóstico ou laudo médico.</small>
+                  </button>
+
+                  <button type="button" class="va-option" data-value="Ainda estou buscando diagnóstico">
+                    <span><i class="bi bi-question-circle"></i></span>
+                    <strong>Ainda estou buscando diagnóstico</strong>
+                    <small>A família ainda está em fase de avaliação ou investigação.</small>
+                  </button>
+                </div>
+
+                <!-- Etapa 2 -->
+                <div class="va-step">
+                  <h3>Já possui laudo ou relatório médico?</h3>
+                  <p>Laudos, relatórios e acompanhamentos ajudam a demonstrar a condição e as necessidades da criança.</p>
+
+                  <button type="button" class="va-option" data-value="Sim">
+                    <span><i class="bi bi-file-earmark-medical"></i></span>
+                    <strong>Sim</strong>
+                    <small>Tenho laudo, relatório ou documento médico.</small>
+                  </button>
+
+                  <button type="button" class="va-option" data-value="Não">
+                    <span><i class="bi bi-file-earmark-x"></i></span>
+                    <strong>Não</strong>
+                    <small>Ainda não tenho documentos médicos completos.</small>
+                  </button>
+
+                  <button type="button" class="va-option" data-value="Tenho dúvidas">
+                    <span><i class="bi bi-chat-left-text"></i></span>
+                    <strong>Tenho dúvidas</strong>
+                    <small>Não sei se os documentos que tenho são suficientes.</small>
+                  </button>
+                </div>
+
+                <!-- Etapa 3 -->
+                <div class="va-step">
+                  <h3>O INSS já negou algum pedido?</h3>
+                  <p>Entender se já houve negativa ajuda a direcionar melhor os próximos passos.</p>
+
+                  <button type="button" class="va-option" data-value="Sim">
+                    <span><i class="bi bi-x-circle"></i></span>
+                    <strong>Sim</strong>
+                    <small>O pedido já foi feito e acabou sendo negado.</small>
+                  </button>
+
+                  <button type="button" class="va-option" data-value="Não">
+                    <span><i class="bi bi-check-circle"></i></span>
+                    <strong>Não</strong>
+                    <small>Ainda não houve negativa do INSS.</small>
+                  </button>
+
+                  <button type="button" class="va-option" data-value="Ainda não solicitei">
+                    <span><i class="bi bi-pencil-square"></i></span>
+                    <strong>Ainda não solicitei</strong>
+                    <small>Quero entender se posso iniciar o pedido.</small>
+                  </button>
+                </div>
+
+                <!-- Etapa 4 -->
+                <div class="va-step">
+                  <h3>Preencha seus dados para continuar</h3>
+                  <p>Você será direcionado para o WhatsApp com as informações preenchidas.</p>
+
+                  <div class="row g-3">
+                    <div class="col-md-6 col-12">
+                      <label for="nome" class="form-label">Seu nome</label>
+                      <input type="text" class="form-control va-input" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                      <label for="telefone" class="form-label">WhatsApp</label>
+                      <input type="tel" class="form-control va-input" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn va-btn va-btn-gold va-btn-lg w-100 mt-4">
+                    Quero minha análise inicial
+                    <i class="bi bi-whatsapp"></i>
+                  </button>
+
+                  <div class="va-privacy-note">
+                    <i class="bi bi-lock"></i>
+                    <span>Seus dados serão utilizados apenas para contato e análise inicial do seu caso.</span>
+                  </div>
+                </div>
+
+                <button type="button" class="va-back-btn" id="backBtn">
+                  <i class="bi bi-arrow-left"></i>
+                  Voltar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quem vai te atender -->
+    <section id="sobre" class="va-section va-section-light container-fluid">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 col-12">
+            <div class="va-lawyer-photo">
+              <img src="./img-dra/sobre-dra-vitoria.jpg" alt="Dra. Vitória Albino">
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-12">
+            <span class="va-section-label">Quem vai te atender</span>
+
+            <h2>Vitória Albino Advocacia</h2>
+
+            <p>
+              A Vitória Albino Advocacia atua com orientação jurídica em benefícios previdenciários e assistenciais, auxiliando famílias que precisam entender seus direitos junto ao INSS.
+            </p>
+
+            <p>
+              O atendimento é conduzido com clareza, responsabilidade e linguagem simples, buscando orientar mães, pais e responsáveis sobre os documentos necessários, os requisitos do BPC/LOAS e os caminhos possíveis em cada caso.
+            </p>
+
+            <div class="va-lawyer-tags">
+              <span>OAB: [INSERIR OAB]</span>
+              <span>Atendimento online</span>
+              <span>Presencial em Itaberaí/GO</span>
+            </div>
+
+            <a href="https://wa.me/556293581157?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20sobre%20BPC%2FLOAS%20Autista%20e%20gostaria%20de%20fazer%20uma%20an%C3%A1lise%20inicial." target="_blank" class="btn va-btn va-btn-gold mt-4">
+              Falar com a equipe
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="va-section container-fluid">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8 col-12">
+            <span class="va-section-label">Diferenciais</span>
+
+            <h2>Um atendimento jurídico pensado para acolher e orientar sua família</h2>
+
+            <p class="va-section-sub">
+              A análise do BPC/LOAS exige cuidado com documentos, informações familiares e detalhes que podem fazer diferença no processo.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="va-diff-card">
+              <i class="bi bi-person-heart"></i>
+              <h3>Atendimento humanizado</h3>
+              <p>Escuta atenta para entender a realidade da criança e da família.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="va-diff-card">
+              <i class="bi bi-chat-square-text"></i>
+              <h3>Linguagem simples</h3>
+              <p>Explicações claras, sem juridiquês, para você entender cada etapa.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="va-diff-card">
+              <i class="bi bi-folder-check"></i>
+              <h3>Orientação documental</h3>
+              <p>Ajuda para compreender quais documentos podem fortalecer o pedido.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="va-diff-card">
+              <i class="bi bi-bank"></i>
+              <h3>Atuação previdenciária</h3>
+              <p>Atuação voltada a benefícios do INSS e direitos assistenciais.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="va-diff-card">
+              <i class="bi bi-phone"></i>
+              <h3>Atendimento online</h3>
+              <p>Você pode iniciar sua análise pelo WhatsApp, sem sair de casa.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="va-diff-card">
+              <i class="bi bi-check2-square"></i>
+              <h3>Acompanhamento responsável</h3>
+              <p>Cada caso é avaliado individualmente, sem promessa de resultado.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="duvidas" class="va-section va-section-light container-fluid">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8 col-12">
+            <span class="va-section-label">Dúvidas frequentes</span>
+
+            <h2>Ainda com dúvidas sobre o BPC/LOAS?</h2>
+
+            <p class="va-section-sub">
+              Veja respostas para algumas perguntas comuns de mães, pais e responsáveis.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9 col-12">
+            <div class="accordion va-accordion" id="faqBpc">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                    O que é o BPC/LOAS?
+                  </button>
+                </h3>
+
+                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqBpc">
+                  <div class="accordion-body">
+                    É um benefício assistencial pago pelo INSS no valor de um salário-mínimo mensal para pessoas com deficiência e idosos que preencham os requisitos legais. Ele não exige contribuição ao INSS, mas exige comprovação da condição e da vulnerabilidade familiar.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-controls="faq2">
+                    Criança autista pode receber BPC/LOAS?
+                  </button>
+                </h3>
+
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqBpc">
+                  <div class="accordion-body">
+                    Crianças e adolescentes com TEA podem se enquadrar como pessoas com deficiência para fins de BPC/LOAS, desde que os requisitos sejam comprovados. Cada caso precisa ser analisado de forma individual.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-controls="faq3">
+                    Preciso ter CadÚnico?
+                  </button>
+                </h3>
+
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqBpc">
+                  <div class="accordion-body">
+                    Sim. O CadÚnico atualizado costuma ser um requisito importante para a solicitação do BPC/LOAS. Ele deve refletir corretamente a composição, endereço e renda da família.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-controls="faq4">
+                    E se a renda familiar passar um pouco do limite?
+                  </button>
+                </h3>
+
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqBpc">
+                  <div class="accordion-body">
+                    A renda é um ponto importante, mas a análise pode considerar outros fatores, como gastos com saúde, terapias, medicamentos, transporte e necessidades específicas da criança. Por isso, é importante avaliar o caso com atenção.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-controls="faq5">
+                    O que fazer se o INSS negar?
+                  </button>
+                </h3>
+
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqBpc">
+                  <div class="accordion-body">
+                    A negativa deve ser analisada para entender o motivo. Dependendo do caso, pode ser possível apresentar recurso, reunir novos documentos ou avaliar outro caminho jurídico adequado.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-controls="faq6">
+                    Quanto tempo demora?
+                  </button>
+                </h3>
+
+                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqBpc">
+                  <div class="accordion-body">
+                    O tempo pode variar conforme a análise do INSS, a necessidade de perícia, a documentação apresentada e eventual recurso ou medida judicial. Por isso, cada caso deve ser avaliado individualmente.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-controls="faq7">
+                    O benefício tem 13º salário?
+                  </button>
+                </h3>
+
+                <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqBpc">
+                  <div class="accordion-body">
+                    O BPC/LOAS não é aposentadoria e, em regra, não possui 13º salário. Ele é um benefício assistencial mensal pago enquanto os requisitos forem mantidos.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-controls="faq8">
+                    A análise inicial é pelo WhatsApp?
+                  </button>
+                </h3>
+
+                <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqBpc">
+                  <div class="accordion-body">
+                    Sim. Você pode iniciar o atendimento pelo WhatsApp, enviando as informações básicas do caso para receber uma orientação inicial.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-5">
+              <a href="https://wa.me/556293581157?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20sobre%20BPC%2FLOAS%20Autista%20e%20gostaria%20de%20fazer%20uma%20an%C3%A1lise%20inicial." target="_blank" class="btn va-btn va-btn-gold va-btn-lg">
+                Tirar minhas dúvidas no WhatsApp
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="va-final-cta container-fluid">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-9 col-12">
+            <span class="va-section-label va-label-light">Análise inicial</span>
+
+            <h2>Entenda se sua família pode solicitar o BPC/LOAS</h2>
+
+            <p>
+              Fale com a equipe da Vitória Albino Advocacia e receba uma orientação inicial sobre o seu caso.
+            </p>
+
+            <a href="https://wa.me/556293581157?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20sobre%20BPC%2FLOAS%20Autista%20e%20gostaria%20de%20fazer%20uma%20an%C3%A1lise%20inicial." target="_blank" class="btn va-btn va-btn-gold va-btn-lg">
+              Fazer análise inicial pelo WhatsApp
+              <i class="bi bi-arrow-right"></i>
+            </a>
+
+            <p class="va-final-phone">
+              Ou fale diretamente: <strong>(62) 9358-1157</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="va-footer container-fluid">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-12">
+          <img src="./img-dra/logo-header-white.png" class="va-footer-logo" alt="Vitória Albino Advocacia">
+
+          <p>
+            Atendimento jurídico humanizado para famílias que buscam orientação sobre benefícios previdenciários e assistenciais junto ao INSS.
+          </p>
+
+          <div class="va-social">
+            <a href="#" target="_blank" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="https://wa.me/556293581157" target="_blank" aria-label="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-12">
+          <h3>Navegação</h3>
+
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#direito">Quem tem direito</a></li>
+            <li><a href="#documentos">Documentos</a></li>
+            <li><a href="#analise">Análise inicial</a></li>
+            <li><a href="#duvidas">Dúvidas frequentes</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-5 col-md-6 col-12">
+          <h3>Contato</h3>
+
+          <ul class="va-contact-list">
+            <li>
+              <i class="bi bi-whatsapp"></i>
+              <a href="https://wa.me/556293581157" target="_blank">WhatsApp: (62) 9358-1157</a>
+            </li>
+
+            <li>
+              <i class="bi bi-clock"></i>
+              <span>Segunda a sexta: 8h às 18h</span>
+            </li>
+
+            <li>
+              <i class="bi bi-geo-alt"></i>
+              <span>Av Aureo Cabral, R. Vila Progresso - St Santo Antônio, Itaberaí - GO, 76630-000</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="va-footer-disclaimer">
+        <p>
+          Este site não é vinculado ao INSS, ao Governo Federal, ao Google ou à Meta. A Vitória Albino Advocacia presta serviços jurídicos de acordo com a legislação vigente e o Código de Ética da OAB. As informações apresentadas não garantem aprovação de benefício, pois cada caso depende de análise individual.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating -->
+  <a href="https://wa.me/556293581157?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20sobre%20BPC%2FLOAS%20Autista%20e%20gostaria%20de%20fazer%20uma%20an%C3%A1lise%20inicial." class="va-whatsapp-float" target="_blank" aria-label="Chamar no WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "O que é o BPC/LOAS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O BPC/LOAS é um benefício assistencial pago pelo INSS no valor de um salário-mínimo mensal para pessoas com deficiência e idosos que preencham os requisitos legais. Ele não exige contribuição ao INSS, mas exige comprovação da condição e da vulnerabilidade familiar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Criança autista pode receber BPC/LOAS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Crianças e adolescentes com TEA podem se enquadrar como pessoas com deficiência para fins de BPC/LOAS, desde que os requisitos sejam comprovados. Cada caso precisa ser analisado de forma individual."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Preciso ter CadÚnico?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. O CadÚnico atualizado costuma ser um requisito importante para a solicitação do BPC/LOAS. Ele deve refletir corretamente a composição, endereço e renda da família."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "E se a renda familiar passar um pouco do limite?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A renda é um ponto importante, mas a análise pode considerar outros fatores, como gastos com saúde, terapias, medicamentos, transporte e necessidades específicas da criança."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O que fazer se o INSS negar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A negativa deve ser analisada para entender o motivo. Dependendo do caso, pode ser possível apresentar recurso, reunir novos documentos ou avaliar outro caminho jurídico adequado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O benefício tem 13º salário?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O BPC/LOAS não é aposentadoria e, em regra, não possui 13º salário. Ele é um benefício assistencial mensal pago enquanto os requisitos forem mantidos."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Form JS -->
+  <script>
+    const steps = document.querySelectorAll(".va-step");
+    const options = document.querySelectorAll(".va-option");
+    const progressBar = document.getElementById("progressBar");
+    const progressText = document.getElementById("progressText");
+    const progressPercent = document.getElementById("progressPercent");
+    const backBtn = document.getElementById("backBtn");
+
+    let currentStep = 0;
+    let respostas = [];
+
+    function updateProgress() {
+      const percent = Math.round(((currentStep + 1) / steps.length) * 100);
+
+      progressBar.style.width = percent + "%";
+      progressText.textContent = `Etapa ${currentStep + 1} de ${steps.length}`;
+      progressPercent.textContent = percent + "%";
+
+      if (currentStep > 0) {
+        backBtn.classList.add("show");
+      } else {
+        backBtn.classList.remove("show");
+      }
+    }
+
+    function showStep(index) {
+      steps.forEach(step => step.classList.remove("active"));
+      steps[index].classList.add("active");
+      currentStep = index;
+      updateProgress();
+    }
+
+    options.forEach(option => {
+      option.addEventListener("click", () => {
+        const parent = option.closest(".va-step");
+
+        parent.querySelectorAll(".va-option").forEach(item => {
+          item.classList.remove("selected");
+        });
+
+        option.classList.add("selected");
+        respostas[currentStep] = option.dataset.value;
+
+        setTimeout(() => {
+          if (currentStep < steps.length - 1) {
+            showStep(currentStep + 1);
+          }
+        }, 250);
+      });
+    });
+
+    backBtn.addEventListener("click", () => {
+      if (currentStep > 0) {
+        showStep(currentStep - 1);
+      }
+    });
+
+    document.getElementById("formBpcAutista").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const nome = document.getElementById("nome").value.trim();
+      const telefone = document.getElementById("telefone").value.trim();
+
+      if (!nome || !telefone) {
+        alert("Preencha seu nome e WhatsApp para continuar.");
+        return;
+      }
+
+      const texto =
+        `Olá, vim pela página sobre BPC/LOAS Autista e gostaria de fazer uma análise inicial.%0A%0A` +
+        `Nome: ${encodeURIComponent(nome)}%0A` +
+        `WhatsApp: ${encodeURIComponent(telefone)}%0A%0A` +
+        `Diagnóstico de autismo: ${encodeURIComponent(respostas[0] || "Não informado")}%0A` +
+        `Possui laudo ou relatório médico: ${encodeURIComponent(respostas[1] || "Não informado")}%0A` +
+        `INSS já negou algum pedido: ${encodeURIComponent(respostas[2] || "Não informado")}`;
+
+      window.open(`https://wa.me/556293581157?text=${texto}`, "_blank");
+    });
+
+    updateProgress();
+  </script>
+
+</body>
+</html>
